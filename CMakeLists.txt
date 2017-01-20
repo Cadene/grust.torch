@@ -7,5 +7,5 @@ file(GLOB_RECURSE luafiles RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "*.lua")
 
 foreach(file ${luafiles})
   get_filename_component(dir ${file} PATH)
-  install(FILES ${file} DESTINATION ${LUA_PATH}/${PKGNAME}/${dir})
+  install(FILES ${file} DESTINATION ${LUA_PATH}/${dir})
 endforeach()

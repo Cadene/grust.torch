@@ -27,18 +27,18 @@ s[t] = (1-z[t])h[t] + z[t]s[t-1]                           (4)
 ```
 $ git clone https://github.com/Cadene/grust.torch
 $ cd grust.torch
-$ luarocks install rocks/grust-scm-1.rockspec
+$ luarocks make rocks/grust-scm-1.rockspec
 ```
 
 ### How to
 
 ```lua 
 require 'nn'
+require 'rnn'
 require 'GRUST'
 m = nn.GRUST(620, 2400)
-seq=10
 batch=20
-print(m:forward(torch.ones(seq, batch, 620))):size()
+print(m:forward(torch.ones(batch, 620)):size())
 ```
 
 ### Licence
