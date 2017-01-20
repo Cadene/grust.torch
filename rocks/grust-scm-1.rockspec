@@ -1,17 +1,17 @@
-package = "weldon"
+package = "grust"
 version = "scm-1"
 
 source = {
-   url = "git://github.com/Cadene/weldon.torch",
+   url = "git://github.com/Cadene/grust.torch",
    tag = "master"
 }
 
 description = {
-   summary = "Weldon Pooling for Torch7 nn",
+   summary = "GRU for skip-thoughts models in Torch7",
    detailed = [[
-Torch7 Implementation of Weldon Pooling
+Gated Recurrent Units architecture for Skip Thoughts vectors in Torch7 nn
    ]],
-   homepage = "https://github.com/Cadene/weldon.torch",
+   homepage = "https://github.com/Cadene/grust.torch",
    license = "MIT License"
 }
 
